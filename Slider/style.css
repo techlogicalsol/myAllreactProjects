@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center_div{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.center_div::-webkit-scrollbar{
+    overflow: hidden;
+}
+
+.main_div{
+    display: grid;
+    width: 100vw;
+    height: 70vh;
+    place-items: center; 
+}
+
+
+
+
+img{
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
