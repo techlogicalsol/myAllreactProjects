@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+}
+
+.container h1{
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #4CAF50;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.bottom_line{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 6%;
+    border-top: 8px solid #badc58;
+    margin-bottom: 30px;
+    
+}
+
+.card{
+    width: 50%;
+    height: 85vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 12px;
+}
+
+.imgBorder{
+    display: flex;
+    background-color: #badc58;
+    border-radius: 50%;
+    padding-right: 6px;
+    padding-top: 6px;
+
+}
+
+.container h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #008CBA;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.job{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #4CAF50;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-weight: bolder;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.myinfo{
+    background-color: #b8e994;
+    box-shadow: rgb(159, 192, 132) 0px 20px 30px -10px;
+    border-radius: 8px;
+    width: 80%;
+    letter-spacing: 2px;
+    line-height: 25px;
+    padding: 10px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.myImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.btn-group{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn-group button{
+    width: 40px;
+    height: 40px;
+    color: black;
+    font-size: 20px;
+    border: 2px solid #008CBA;
+    cursor: pointer;
+    background-color: transparent;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+  
+}
+
+.btn-group button:hover{
+    background-color: #008CBA;
+    color: white;
+    border-radius: 10px;
+}
+
+.me{
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.me:hover{
+    background-color: #008CBA;
+    color: white;
+    border-radius: 10px;
+}

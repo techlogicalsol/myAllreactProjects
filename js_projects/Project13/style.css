@@ -1,0 +1,152 @@
+body{
+  font-family: sans-serif;
+  background-color: #c8d6e5;
+}
+
+
+.section-center {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 8rem;
+  border-radius: 8px;
+  transition: all 0.3s linear;
+}
+
+.section-center:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+} 
+/* @media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}  */
+
+
+
+.alert{
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  transition: all 0.3s linear;
+}
+
+.alert-danger {
+    color: white;
+    background-color: #ff7675;
+}
+
+.alert-success {
+    color: white;
+    background-color: #00cec9;
+}
+
+.grocery-form h3 {
+    color: #079992;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+}
+
+#grocery {
+    flex: 1 0 auto;
+    padding: 10px;
+    border-color: transparent;
+    background-color: #f1f2f6;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    font-size: 16px;
+    padding-left: 15px;
+    outline: none;
+}
+  
+
+.submit-btn {
+    transition: all 0.3s linear;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-color: transparent;
+    background-color: #78e08f;
+    color: white;
+}
+
+.submit-btn:hover {
+   background-color: #38ada9;
+   color: aliceblue;
+   letter-spacing: 2px;
+}
+  
+.grocery-container {
+  margin-top: 30px;
+  transition: all 0.3s linear;
+  visibility: hidden;
+}
+
+
+.show-container {
+    visibility: visible;
+}
+
+.edit-btn,
+.delete-btn {
+    transition: all 0.3s linear;
+    border: none;
+    font-size: 20px;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+
+.edit-btn {
+    color: #55efc4;
+}
+
+.edit-btn:hover {
+    color: #00b894;
+}
+
+.delete-btn {
+    color: #ff7675;
+}
+  .delete-btn:hover {
+    color: #d63031;
+}
+
+.clear-btn {
+  transition: all 0.3s linear;
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border-color: transparent;
+  background-color: #74b9ff;
+  border-radius: 8px;
+  color: #f1f2f6;
+  letter-spacing: 2px;
+}
+
+.clear-btn:hover {
+    background-color: #0984e3;
+    padding: 12px 16px;
+}
+
+

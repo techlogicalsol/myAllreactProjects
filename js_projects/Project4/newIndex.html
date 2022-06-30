@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newstyle.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            })
+        })
+    </script>
+    
+</head>
+<body>
+
+    <nav>
+        <div class="nav-center">
+
+            <div class="nav-header">
+                <label class="logo">Design X</label>
+                <button id="icon" class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+   
+        
+        <ul class="links">
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <!-- <button id="icon">CLICK</button> -->
+    </div>
+    </nav>
+    
+
+    <!-- <section style="background-color: blue;">
+        My name is Amar 
+    </section> -->
+
+
+    <script src="newapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links-container{
+    height: 0;
+    /* overflow: hidden; */
+
+}
+
+.links a{
+    color: red;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: block;
+}
+
+.nav-toggle{
+    font-size: 30px;
+    color:black;
+    background: transparent;
+    border-color: transparent;
+}
+
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(63,208,212,0.5), rgba(0,0,0,0.9)),
+    url(./hero.jpeg)center/cover no-repeat;
+}
+
+.banner{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+@media(min-width: 800px){
+    .nav-center{
+        width: 90vw;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links{
+        display: flex;
+    }
+
+    .nav-toggle{
+        display: none;
+    }
+}

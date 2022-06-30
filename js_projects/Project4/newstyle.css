@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav{
+    height: 80px;  
+    background-color: #ccc;
+    color: black;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.links a{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    display: block;
+    padding: 0.4rem 0;
+}
+
+
+
+#icon{
+    display: none;
+    
+}
+
+.nav-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    height: 80px;  
+}
+
+
+.links{
+    display: flex;
+    height: auto;
+}
+
+.links a{
+    padding: 0;
+    margin: 0 0.5rem;
+}
+
+
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 1rem; */
+}
+
+.nav-toggle{
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+
+@media(max-width: 800px){
+    label.logo{
+        font-size: 32px;
+        /* padding-left: 60px; */
+    }
+
+    .nav-header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+/* 
+    nav{
+        background-color: yellowgreen;
+        line-height: 80px;
+    } */
+
+    .links{
+        flex-direction: column;
+        padding: 0;
+      
+    }
+
+    /* nav ul{
+        margin-right: 20px;
+    } */
+
+    nav a{
+        font-size: 17px;
+    }
+
+    #icon{
+        display: block;
+    }
+
+    .links{
+        width: 100%;
+        position: fixed;
+        height: 100vh;
+        background: #ddd;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+        text-align: center;
+    }
+
+    .links li{
+        display: block;
+        /* margin: 50px 0; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        /* line-height: 20px; */
+        text-align: left;
+    }
+
+    nav .links.show{
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* @media(max-width: 909px){
+
+    
+} */
+
+
