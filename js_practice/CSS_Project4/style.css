@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: #16a085;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.navBar{
+    background-color: #ecf0f1;
+    display: flex;
+    font-size: 18px;
+
+}
+
+.navBar a{
+    text-decoration: none;
+    padding: 14px 20px;
+    color: black;
+}
+
+.navBar a:hover{
+    background-color: #bdc3c7;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrappper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px;
+ 
+}
+
+.left{
+    flex: 65%;
+    background-color: #dfe6e9;
+    padding: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.right{
+    flex: 30%;
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+   
+}
+
+.main{
+    flex: 100%;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.form-control{
+    background-color: #bdc3c7;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: fit-content;
+}
+
+input[type=text]{
+    padding: 6px;
+    width: 150px;
+}
+
+input[type=text]:focus{
+    background-color: lightcyan;
+}
+
+#heading{
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+@media (max-width: 700px){
+    .row, .nav{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px){
+    .wrappper{
+        flex-direction: column;
+        width: 92%;
+    }
+
+    .left, .right{
+        flex-direction: column;
+    
+    }
+
+    .left{
+        margin-right: 0px;
+    }
+
+    input[type=text]{
+        width: auto;
+    }
+  
+}

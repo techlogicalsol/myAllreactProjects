@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    background-color: #84817a;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.footer{
+    background-color: #84817a;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.row{
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+
+.column{
+   -webkit-flex: 1;
+   flex: 1;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px){
+    .row{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
