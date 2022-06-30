@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    background-color: aliceblue;
+    margin: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.item{
+    background-color: white;
+    color: #333;
+    font-size: 35px;
+    padding: 20px;
+    margin: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item h4{
+    text-align: center;
+}
+
+.btn-home{
+    margin-top: 20px;
+    width: 200px;
+    padding: 12px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background: #A3CB38;
+    letter-spacing: 4px;
+    font-weight: 600;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.btn-home:hover{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    padding-right: 1.75rem;
+    color: #f9ca24;
+}
+
+
+
+.icon-marks{
+    padding: 10px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    color: aliceblue;
+    border-radius: 4px;
+}

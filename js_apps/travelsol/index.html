@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <!-- <script>
+      $(document).ready(function(){
+          $('#icon').click(function(){
+              $('ul').toggleClass('show')
+              
+          })
+      })
+
+    function hideOverlay() {
+  $('#nav-toggle').prop('checked', false)
+}
+
+
+  </script>  
+   -->
+  <title>Travel Solution</title>
+</head>
+<body>
+    <header id="home">
+    <nav id="nav">
+        <div class="nav-center">
+
+            <div class="nav-header">
+                <div class="logo">
+                    <span class="span-logo1">Travel</span>
+                    <span class="span-logo2">Solutions</span>
+                </div>
+                    <button id="icon" class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- Links -->
+                    <div class="links-container">
+                       
+                    <ul class="links">
+                        <div class="leftBtn">
+                            
+                            <button class="closeBtn" onclick="closeNav()">X</button>
+                        </div>
+                        <li><a href="#offer" class="scroll-link">Offers</a></li>
+                        <li><a href="#packages" class="scroll-link">Packages</a></li>
+                        <li><a href="#contact" class="scroll-link">contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="banner"> -->
+        <!-- <div class="container"> -->
+            <div class="form-center">
+                
+                <article class="travelTab main-text">
+                    <div class="btn-container">
+                        <div class="tab-btn active" data-id="flight">
+                            <i class="fas fa-plane-departure"></i> flight
+                        </div>
+                        <div class="tab-btn" data-id="hotel">
+                            <i class="fas fa-hotel"></i> hotel
+                        </div>
+                        <div class="tab-btn" data-id="rental">
+                            <i class="fas fa-car-alt"></i> rental
+                        </div>
+                    </div>
+
+                    <article class="form-content">
+                <!-- single-item 1 -->
+                <div class="content active" id="flight">
+                        <p class="heading">Travel the world with us</p>
+                       
+                    <form class="form-inline">
+                        <div class="form-control">
+                            <label for="from">From</label>
+                                <select required id="cities">
+                                    <option value="" disabled selected hidden>Departing From</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>    
+                                </select>
+                        </div>
+
+                        <div class="form-control">
+                                <label for="to">To</label>
+                                <select id="cities">
+                                    <option value="" disabled selected hidden>Arriving to</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>   
+                                </select>   
+                                    
+                        </div>   
+                        <button class="btn-search">Search and find dates</button>         
+                    </form>
+                </div>
+            
+            <!-- end of single-item -->
+
+                <!-- single-item 2 -->
+          <div class="content" id="hotel">
+            <p class="heading">Find the best hotels</p>
+            <p>Book a hotel with us and get the best fares and promotions.</p>
+            <p>We know hotels - we know comfort.</p>
+            <button class="btn-search">Search Hotels</button>
+          </div>
+        <!-- end of single-item -->
+
+         <!-- single-item 3-->
+         <div class="content" id="rental">
+            <p class="heading">Best car rental in the world!</p>
+            <p>
+                <span id="discount">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs
+            </p>
+            <div class="pickup">
+            <input type="text" placeholder="Pick-up point"/>
+            <button class="btn-search">Search Availability</button>
+        </div>
+          </div>
+        <!-- end of single-item -->
+
+                    </article>
+                </article>
+            </div>
+        <!-- </div> -->
+    <!-- </div> -->
+</header>
+           
+
+
+<!-- Offers -->
+
+
+<div class="flex-container row1" id="offer">
+    <div class="wrapper1">
+        <div class="text-center">
+            <h1>Good Offers Right Now</h1>
+            <p>Up to 50% discount.</p>
+        </div>
+       
+        <div class="center-control">
+      
+        <div class="col col-left-offer">
+            <div class="card">
+            <img src="./img/new9.jpg" class="imgOffer" alt="img"/>
+            <div class="text">
+                Cinque Terre
+            </div>
+        </div>
+        </div>
+
+        <div class="col col-right-offer">
+            <div class="wrapper2">
+            <div class="col-sub">
+            <div class="card-slow-motion">
+                <img src="./img/travel11.jpg" class="imgOfferSub" alt="img"/>
+                <div class="text1">
+                    <p>New York</p>
+                </div>  
+            </div>
+            </div>
+
+            <div class="col-sub">
+                <div class="card-vertical-zoom">
+                <img src="./img/travel12.jpg" class="imgOfferSub" alt="img"/>
+                <div class="text2">
+                    <p>London</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-sub-bottom">
+                <div class="card-horizantal-zoom">
+                <img src="./img/travel13.jpg" class="imgOfferSub" alt="img"/>
+                <div class="text3">
+                    <p>Berlin</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-sub-bottom">
+                <div class="card-blur-zoom">
+                <img src="./img/travel14.jpg" class="imgOfferSub" alt="img"/>
+                <div class="text4">
+                    <p>Toronto</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+   
+<!-- offers end -->
+
+
+
+<!-- Explore Nature Start-->
+
+
+<div class="flex-container row2">
+    <div class="wrapper3">
+        <div class="text-center-explore">
+            <h1>Explore Nature</h1>
+            <p>Travel with us and see nature at its finest.</p>
+        </div>
+    </div>
+
+    <div class="wrapper4">
+        <div class="sectionExplore">
+        <!-- <div class="col-left-explore">
+            <div class="card-explore">
+                <img src="./img/travel1.jpg" class="imgExplore" alt="imgExplore"/>
+                <div class="card-body-explore">
+                    <h2 class="title">West Coast, Norway</h2>
+                    <p class="price">Roundtrip from $79</p>
+                    <p class="info">
+                        Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                    </p>
+
+                    <button class="btn-explore">Buy Tickets</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="col-left-explore">
+            <div class="card-explore">
+                <img src="./img/travel1.jpg" class="imgExplore" alt="imgExplore"/>
+                <div class="card-body-explore">
+                    <h2>West Coast, Norway</h2>
+                    <p>Roundtrip from $79</p>
+                    <p class="info">
+                        Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                    </p>
+
+                    <button>Buy Tickets</button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    </div>
+</div>
+
+<!-- Explore Nature End-->
+
+
+
+<!-- Packages-Destination Start-->
+
+
+<div class="flex-container row5" id="packages">
+    <div class="wrapper5">
+        <div class="text-center-locations">
+            <h1>Plan Your Trip</h1>
+            <p>
+                The results are in! Explore this year’s expert-approved list of must-see
+                destinations, places, and unforgettable experiences guaranteed to 
+                inspire.
+            </p>
+        </div>
+
+        <div class="btn-containers">
+            <button class="filter-btn" type="button">canada</button>
+        </div>
+
+        <div class="sectionLocations">
+            <!-- <div class="col col-locations">
+                <div class="card-locations">
+                    <div class="card-vertical-zoom">
+                        <img src="./img/travel1.jpg" class="imgLocations" alt="locations" />
+                    </div>
+                    <div class="card-body-location">
+                        <div class="country">
+                            Canada
+                        </div>
+                        <span>City</span>
+                        <p>Price</p>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Packages-Destination End-->
+
+
+<!-- Social Media Follow us Start-->
+
+<div class="flex-container row6">
+    <div class="wrapper6">
+        <div class="text-center-social">
+            
+                <div class="logo">
+                    <span class="span-logo1">Travel</span>
+                    <span class="span-logo2">Solutions</span>
+                </div>
+                <div class="text-follow">
+                    <span>
+                        FOLLOW LONELY PLANET:
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                        <i class="fab fa-tiktok"></i>
+                    </span>
+                </div>
+           
+        </div>
+        <div class="sectionSocial">
+            <!-- <div class="col col-socialMedia">
+                <img src="" class="imgSocial" alt="imgSocial" />
+                <p class="connect"></p>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<!-- Social Media Follow us End-->
+
+
+<!-- Newsletter Get the best offer start -->
+
+
+<div class="flex-container row7">
+    <div class="wrapper7">
+        <div class="col col-newsletter">
+            <h1>Get the best offers first!</h1>
+            <p>Join our newsletter.</p>
+            <div class="form-controller1">
+            <label>E-mail</label>
+            <input type="email" placeholder="Your Email address" id="email"/>
+            <button class="btn-subscribe">Subscribe</button>
+        </div>
+        </div>
+
+        <div class="col col-contact" id="contact">
+            <h1>Contact</h1>
+            <p style="margin-bottom: 30px;">Let us book your next trip!</p>
+
+            <div class="text-contact">
+                <span><i class="fas fa-map-marker"></i></span>
+                <p>Toronto, Canada</p>
+            </div>
+
+            <div class="text-contact">
+                <span><i class="fas fa-phone-alt"></i></span>
+                <p>Phone: 204-751-0745</p>
+            </div>
+
+            <div class="text-contact">
+                <span><i class="fas fa-mail-bulk"></i></span>
+                <p>Email: techlogexsolutions@gmail.com</p>
+            </div>
+
+         
+                <div class="form-controller2">
+                <input type="text" placeholder="Name" id="name"/>
+                <input type="email" placeholder="Email" id="email"/>
+                <input type="text" placeholder="Message" id="msg"/>
+    
+            <button class="btn-send">send message</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Newsletter Get the best offer end -->
+
+<!-- Footer -->
+
+<div class="footer">
+    <div class="text-center-footer">
+        <p>Find Us On</p>
+        <div class="footer-icon">
+            <span>
+                
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-tiktok"></i>
+            </span>
+        </div>
+      
+    </div>
+    <p>Powered by Techlogex Solutions&copy; <span id="date">2022</span></p>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/98fb804dda.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <title>Marksheet Calculator</title>
+</head>
+<body>
+    <div class="header">
+        Tech Solutions
+    </div>
+
+    <div class="navBar">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        
+    </div>
+
+    <div class="router">
+        <a href="../home.html">
+            <button class="back button">Go Back</button>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mb-5 left">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>HTML</th>
+                            <th>CSS</th>
+                            <th>JavaScript</th>
+                            <th>Bootstrap</th>
+                            <th>Node JS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" id="value1">
+                            </td>
+
+                            <td>
+                              <input type="text" class="form-control" id="value2">
+                            </td>
+
+                            <td>
+                              <input type="text" class="form-control" id="value3">
+                            </td>
+
+                            <td>
+                              <input type="text" class="form-control" id="value4">
+                            </td>
+
+                            <td>
+                              <input type="text" class="form-control" id="value5">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="row">
+                <div class="col-md-6 mb-3 newColumn">     
+                    <div>Total Marks</div>
+                    <input type="text" class="form-control" id="newInput">
+                    <button class="btn btn-warning" onclick="sum()">
+                        Obtained Marks
+                    </button>
+                    <span id="obtained"></span>       
+            </div>
+
+            <div class="col-md-6 mb-3 newColumn">
+                <div>Percentage</div>
+                <span id="percent">%</span> 
+                <button class="btn btn-dark" onclick="reset()">Reset</button>
+            </div>
+        </div>
+         
+            </div>
+
+            <div class="col-md-4 mb-5 right">
+                <h5>Passing Marks</h5>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Subjects</th>
+                            <th>Passing Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>Bootstrap</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Node JS</td>
+                            <td>65</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+              
+            </div>
+
+ 
+        </div>
+    </div>
+   
+        
+
+
+    <div class="footer">
+        &#169;Powered by TechLogex Solutions | 2022
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

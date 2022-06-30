@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/98fb804dda.js" crossorigin="anonymous"></script>
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class="header">
+        <i class='fas fa-fingerprint iconTech'></i>TechLogex Solutions
+  
+    </div>
+
+    <div class="navBar">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+   
+    </div>
+
+    <div class="flex-container row">
+        <div class="column left">
+            <h1>Loan Calculator</h1>
+
+            <div class="form-calculator">
+                <div class="form-control">
+                    <label id="loan-form">Principle Amount</label>
+                    <input type="text" />
+                </div>
+
+                <div class="form-control">
+                    <label id="loan-form">Interest</label>
+                    <input type="text" /> 
+                    
+                </div>
+
+                <div class="form-control">
+                    <label id="loan-form">Select the months</label>
+                    <select id="months" name="months">
+                        <option value="12">12</option>
+                        <option value="12">24</option>
+                        <option value="12">36</option>
+                        <option value="12">48</option>
+                        <option value="12">60</option>
+                    </select>
+                </div>
+        </div>
+
+        <button class="btn">Calculate</button>
+        <button class="btn">Reset</button>
+        </div>
+
+        <div class="column right">
+            <h1>Result</h1>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
