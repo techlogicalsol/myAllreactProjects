@@ -1,0 +1,15 @@
+.myImg{
+    width: 100%;
+    
+}
+
+
+.page-link:hover{
+    text-decoration: none;
+    outline: none;
+    
+}
+
+.page-link:focus{
+    box-shadow: none;
+}
